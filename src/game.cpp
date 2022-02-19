@@ -1,15 +1,16 @@
 #include <iostream>
+#include <cmath>
 #include <random>
 
 #include "common.hpp"
 #include "objs.hpp"
 
 
-int random_range(const int& min = 0, const int& max = 10)
+int random_range(const int& max)
 {
     const int x = std::rand();
 
-    return x % max;
+    return (x % max);
 }
 
 int main()
@@ -17,9 +18,9 @@ int main()
     char selection;
 
     std::cout << 
-    "Select one: "
-    " r - rock"
-    " p - paper"
+    "Select one: \n"
+    " r - rock \n"
+    " p - paper \n"
     " s - scissors"
     << std::endl;
 
