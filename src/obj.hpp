@@ -10,6 +10,7 @@ struct GameObject
     std::string value;
     std::string defeats;
 
+    GameObject() : value(""), defeats("") { }
     GameObject(const char* val, const char* defs) : value(val), defeats(defs) { }
 
     int getsDefeatedBy(GameObject& other)

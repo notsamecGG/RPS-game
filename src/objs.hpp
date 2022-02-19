@@ -17,4 +17,6 @@ GameObject objectFromChar(char& c)
         if (objList[i] == c)
             return gameObjList[i];
     }
+
+    return GameObject();
 }
